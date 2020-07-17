@@ -5,7 +5,7 @@ const gender = parseInt(document.getElementById("gender").value);
 const form = parseInt(document.getElementById("form").value);
 
 if (date <1 || date >31){
-    document.getElementsByClassName(*dayerror).innerHtml ="Enter valid date";
+    document.getElementsByClassName(dayerror).innerHtml ="Enter valid date";
     return false;
 }else {
     d.setDate(date);
