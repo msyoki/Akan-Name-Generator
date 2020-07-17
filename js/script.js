@@ -1,3 +1,5 @@
 const date =  document.getElementById("date")
-const date =  document.getElementById("month")
-const date =  document.getElementById("year")
+const month =  document.getElementById("month")
+const year =  document.getElementById("year")
+const gender =  document.getElementById("gender")
+const form =  document.getElementById("form")
