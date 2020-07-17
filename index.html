@@ -6,6 +6,7 @@
     <title>Akan Name Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script defer src="/js/script.js"></script>
 </head>
 <body>
     <div class="header">
@@ -14,13 +15,14 @@
     <div class="about">
     </div>
     <div class="jumbotron">
+        <div id="error"></div>
         <form> 
             <label>Date:</label><br>
-            <input type="year" name="date"> <br>
+            <input id="date" type="text" name="date"> <br>
             <label>Month:</label><br>
-            <input type="year" name="date"> <br>
+            <input id="month" type="text" name="month"> <br>
             <label>Year:</label><br> 
-            <input type="year" name="date"> <br><br>
+            <input id="year" type="text" name="year"> <br><br>
             <label>Gender:</label><br> 
             <select name="gender">
                 <option value="none">select</option> 
