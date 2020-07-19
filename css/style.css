@@ -5,7 +5,7 @@ body {
 .header {
     background-color: #f7a14c;
     font-size: x-large;
-    color: white;
+    color: #2c2c2c;
     font-weight: bold;
     padding: 10px;
     text-align: center;
@@ -31,8 +31,9 @@ body {
 }
 #footer {
     background-color: #f7a14c;
-    color: white;
+    color: #2c2c2c;
     clear: both;
     padding: 20px;
+    font-weight: bold;
 }
 
