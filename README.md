@@ -2,8 +2,6 @@
 #### Author:
 Musyoki Mutua
 
-![web-landing-page]( https://msyoki.github.io/Week-2-Independent-Project-Akan-Name/)
-
 ## Description
 This is a solo project ,a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.   
 
