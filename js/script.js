@@ -13,7 +13,7 @@ function akanNames(){
 
    //calculate century cc and date of the week variable 
    var cc=(year-1)/100+1; 
-   var dateOfWeek = Math.round(( cc/4 -2*cc-1 + 5*year/4  + 26*(month+1)/10 + day ) % 7);
+   var dayOfTheWeek =(( cc/4 -2*cc-1 + 5*year/4  + 26*(month+1)/10 + day ) % 7);
    /*
    Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
    where;
@@ -28,4 +28,24 @@ function akanNames(){
    var maleNames=["Kwasi"," Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
    var gender=document.getElementById("gender").value;
    var daysOfWeek=["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+   var dOfWeek = Math.round(dayOfTheWeek)
+
+   //Verification of the form,output of result and error on input.
+
+   if(!isNaN(dOfWeek)){
+      if(gender=="Male"){
+         document.getElementById("display").innerHTML="You were born on a "+daysOfWeek[dOfWeek]+ " and your akan name is " + maleNames[Math.round(dayOfTheWeek)];
+      }else if(gender==="Female"){
+         document.getElementById("display").innerHTML="You were born on a "+daysOfWeek[dOfWeek]+ " and your Akan Name is " + femaleNames[Math.round(dayOfTheWeek)];
+     }else{
+         alert("Invalid gender");
+         document.getElementById("display").innerHTML="";
+      }   
+   }else{
+      alert("Invalid date of birth");
+      document.getElementById("display").innerHTML="";     
+   }
+
+  //reset function
+  formRefresh();
 }
