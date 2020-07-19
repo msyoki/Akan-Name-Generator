@@ -24,6 +24,11 @@ body {
 .form label {
     font-weight: bold;
 }
+.result {
+    background-color: white;
+    color: #DD1717;
+    font-weight: bold;
+}
 #footer {
     background-color: #f7a14c;
     color: white;
