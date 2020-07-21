@@ -12,7 +12,7 @@ function akanNames(){
    var year=parseInt(dateEntered[0]);
 
    //calculate century cc and date of the week variable 
-   var cc=(year-1)/100+1; 
+   var cc=Math.floor(year/100) + 1
    var dayOfTheWeek =(( cc/4 -2*cc-1 + 5*year/4  + 26*(month+1)/10 + day ) % 7);
    /*
    Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
@@ -23,6 +23,7 @@ function akanNames(){
    DD - is the Day of the month 
    mod - is the modulus function ( % )
    */
+
    document.getElementById("display").innerHTML=Math.round(dayOfTheWeek);
    var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
    var maleNames=["Kwasi"," Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
@@ -49,3 +50,4 @@ function akanNames(){
   //reset function
   formRefresh();
 }
+
