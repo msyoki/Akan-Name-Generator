@@ -13,7 +13,7 @@ function akanNames(){
 
    //calculate century cc and date of the week variable 
    var cc=Math.floor(year/100) + 1
-   var dayOfTheWeek =(( cc/4 -2*cc-1 + 5*year/4  + 26*(month+1)/10 + day ) % 7);
+   var dayOfTheWeek =(( (cc/4) -2*cc-1) + ((5*year/4)) + ((26*(month+1)/10))+ day ) % 7;
    /*
    Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
    where;
